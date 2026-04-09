@@ -62,3 +62,16 @@ lucide.createIcons();
             setTimeout(() => box.remove(), 4000);
             e.target.reset();
         });
+
+const currentPath = window.location.pathname;
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(link => {
+    const linkPath = link.getAttribute("href");
+
+    if (linkPath === currentPath) {
+        link.classList.add("text-emerald-600", "border-b-2", "border-emerald-600");
+        link.classList.remove("text-slate-600");
+    }
+});

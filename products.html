@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosail Exports | Indian Agro-Commodity Leader</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons (via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js" defer></script>
+    
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+           <a href="#home" class="flex items-center space-x-2">
+    
+    <!-- Logo Image -->
+    <img src="img/Agrosail logo.png" alt="Agrosail Logo" class="w-10 h-10 object-contain">
+
+    <!-- Logo Text + Tagline -->
+   <div class="flex flex-col leading-tight">
+    
+    <span  
+          class="font-bold text-2xl tracking-tight text-slate-900 transition-colors duration-300">
+        Agrosail<span class="text-emerald-600">Exports</span>
+    </span>
+   
+    <span 
+          class="text-[10px] md:text-xs text-slate-600 italic tracking-wide font-light">
+        Sailing Freshness Worldwide
+    </span>
+
+</div>
+
+</a>
+   <!-- <a href="#home" class="flex items-center space-x-2">
+        
+        
+        <img src="img/Agrosail logo.png" alt="Agrosail Logo" class="w-10 h-10 object-contain">
+
+        <span id="logo-text" class="font-bold text-2xl tracking-tight text-white transition-colors duration-300">
+            Agrosail<span class="text-emerald-600">Exports</span>
+        </span>
+    </a> -->
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="/home.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Home</a>
+                <a href="/about-us.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">About Us</a>
+                <a href="/products.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Products</a>
+                <a href="/why-choose-us.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Why Choose Us</a>
+                <a href="/global-presence.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Global Presence</a>
+                <a href="/contact-us.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Contact Us</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-slate-900 transition-colors duration-300">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white absolute top-full left-0 w-full shadow-xl border-t border-slate-100">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="/home.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Home</a>
+                <a href="/about-us.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">About Us</a>
+                <a href="/products.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Products</a>
+                <a href="/why-choose-us.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Why Choose Us</a>
+                <a href="/global-presence.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Global Presence</a>
+                <a href="/contact-us.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    
+   
+    <!-- Products Showcase -->
+    <section id="products" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold uppercase tracking-widest text-sm">Our Catalog</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-4 text-slate-900">Premium Agricultural Products</h2>
+                <div class="w-20 h-1.5 bg-emerald-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Products dynamically added or static for HTML -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
+     style="background-image: url('img/vegetables.webp'); background-size: cover; background-position: center;">
+
+    <!-- Light overlay -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="text-5xl mb-6 h-[48px]"></div>
+        <h3 class="text-xl font-bold mb-3 text-white">Fresh Vegetables</h3>
+<p class="text-slate-200 mb-6">Onion, Potato, Tomato, Green Chilli, Okra, and more.</p>
+        <a href="#contact-us" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+            Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+
+                <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
+     style="background-image: url('img/spices.webp'); background-size: cover; background-position: center;">
+
+    <!-- Overlay (same as first card) -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="text-5xl mb-6 h-[48px]"></div>
+        <h3 class="text-xl font-bold mb-3 text-white">Premium Spices</h3>
+        <p class="text-slate-200 mb-6">Black Pepper, Cardamom, Turmeric, Chilli.</p>
+        <a href="#contact-us" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+            Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+<div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
+     style="background-image: url('img/rices.webp'); background-size: cover; background-position: center;">
+
+    <!-- Overlay (same as first card) -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="text-5xl mb-6 h-[48px]"></div>
+        <h3 class="text-xl font-bold mb-3 text-white">Quality Rice</h3>
+        <p class="text-slate-200 mb-6">Basmati & Non-Basmati varieties sourced from the best fields.</p>
+        <a href="#contact-us" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+            Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+<div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
+     style="background-image: url('img/pulses.webp'); background-size: cover; background-position: center;">
+
+    <!-- Overlay (same as first card) -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="text-5xl mb-6 h-[48px]"></div>
+        <h3 class="text-xl font-bold mb-3 text-white">Pulses & Grains</h3>
+        <p class="text-slate-200 mb-6">Nutritious grains and pulses processed with care.</p>
+        <a href="#contact-us" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+            Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+  <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
+     style="background-image: url('img/Dryfruits.webp'); background-size: cover; background-position: center;">
+
+    <!-- Overlay (same as first card) -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="text-5xl mb-6 h-[48px]"></div>
+        <h3 class="text-xl font-bold mb-3 text-white">Dry Fruits</h3>
+        <p class="text-slate-200 mb-6">Premium selection of nutritious nuts and dried fruits.</p>
+        <a href="#contact-us" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+            Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+     <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
+     style="background-image: url('img/coconut.webp'); background-size: cover; background-position: center;">
+
+    <!-- Overlay (same as first card) -->
+    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center text-center">
+        <div class="text-5xl mb-6 h-[48px]"></div>
+        <h3 class="text-xl font-bold mb-3 text-white">Coconut Products</h3>
+        <p class="text-slate-200 mb-6">Fresh coconuts and specialized coconut based products.</p>
+        <a href="#contact-us" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+            Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+        </a>
+    </div>
+</div>                 
+
+              
+             
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="py-24 bg-emerald-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/3">
+                    <span class="text-emerald-400 font-bold uppercase tracking-widest text-sm">Why Partner With Us</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-6 leading-tight">Setting Standards in International Export</h2>
+                    <p class="text-emerald-100 mb-8 opacity-90">
+                        We bridge the gap between farmers and global markets with a commitment to excellence and efficiency.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-emerald-800/50 p-4 rounded-xl border border-emerald-700/50">
+                            <p class="font-bold">Customized Solutions</p>
+                            <p class="text-sm text-emerald-200">Catering to specific client requirements in quantity and packaging.</p>
+                        </div>
+                        <div class="bg-emerald-800/50 p-4 rounded-xl border border-emerald-700/50">
+                            <p class="font-bold">Long-Term Partnerships</p>
+                            <p class="text-sm text-emerald-200">Building trust through transparency and consistent performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg group">
+                        <div class="mb-6 bg-emerald-50 w-16 h-16 rounded-full flex items-center justify-center text-emerald-600 transition-colors group-hover:bg-emerald-100">
+                            <i data-lucide="shield-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-slate-900 text-xl font-bold mb-3">Premium Quality Assurance</h3>
+                        <p class="text-slate-600 leading-relaxed">Strict quality checks from sourcing to packaging meeting international standards.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg group">
+                        <div class="mb-6 bg-emerald-50 w-16 h-16 rounded-full flex items-center justify-center text-emerald-600 transition-colors group-hover:bg-emerald-100">
+                            <i data-lucide="users" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-slate-900 text-xl font-bold mb-3">Strong Supplier Network</h3>
+                        <p class="text-slate-600 leading-relaxed">Direct sourcing from trusted farmers ensures consistency and freshness.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg group">
+                        <div class="mb-6 bg-emerald-50 w-16 h-16 rounded-full flex items-center justify-center text-emerald-600 transition-colors group-hover:bg-emerald-100">
+                            <i data-lucide="globe" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-slate-900 text-xl font-bold mb-3">Export-Focused Operations</h3>
+                        <p class="text-slate-600 leading-relaxed">Expertise in GCC and international market logistics and documentation.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg group">
+                        <div class="mb-6 bg-emerald-50 w-16 h-16 rounded-full flex items-center justify-center text-emerald-600 transition-colors group-hover:bg-emerald-100">
+                            <i data-lucide="truck" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-slate-900 text-xl font-bold mb-3">Reliable & Timely Delivery</h3>
+                        <p class="text-slate-600 leading-relaxed">Efficient supply chain management for on-time global shipments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section id="global-presence" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold uppercase tracking-widest text-sm">Our Network</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-4 text-slate-900">Global Trade Presence</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Connecting Indian agriculture with major markets across the GCC and Europe.</p>
+            </div>
+            
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[600px] flex items-center justify-center"
+     style="background-image: url('img/map.avif'); background-size: cover; background-position: center;">
+
+    <!-- Light overlay (VERY IMPORTANT for readability) -->
+    <div class="absolute inset-0 bg-white/70"></div>
+
+    <!-- Optional globe icon (faded) -->
+    <!-- <div class="absolute inset-0 opacity-10 flex items-center justify-center">
+        <i data-lucide="globe" class="w-full h-full max-w-xl text-emerald-900"></i>
+    </div> -->
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6">
+        <div class="inline-flex flex-wrap justify-center gap-4 mb-8">
+            <span class="px-6 py-3 bg-white shadow-md rounded-full font-bold text-emerald-700 flex items-center">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i> UAE
+            </span>
+            <span class="px-6 py-3 bg-white shadow-md rounded-full font-bold text-emerald-700 flex items-center">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i> Saudi Arabia
+            </span>
+            <span class="px-6 py-3 bg-white shadow-md rounded-full font-bold text-emerald-700 flex items-center">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i> Qatar
+            </span>
+            <span class="px-6 py-3 bg-white shadow-md rounded-full font-bold text-emerald-700 flex items-center">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i> Oman
+            </span>
+            <span class="px-6 py-3 bg-white shadow-md rounded-full font-bold text-emerald-700 flex items-center">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i> Kuwait
+            </span>
+            <span class="px-6 py-3 bg-white shadow-md rounded-full font-bold text-emerald-700 flex items-center">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i> SE Asia
+            </span>
+        </div>
+
+        <p class="text-xl font-medium text-slate-700 max-w-3xl mx-auto">
+            Headquartered in <span class="text-emerald-600 font-bold">Mangalore, Karnataka</span>, 
+            we are strategically positioned to leverage one of India's major shipping ports for global exports.
+        </p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Certs -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Testimonials -->
+                <div class="lg:w-2/3">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i data-lucide="star" class="text-yellow-400 mr-2 fill-yellow-400"></i> What Our Clients Say
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
+                            <p class="text-slate-600 italic mb-6">"Agrosail Exports has been our consistent supplier for onions and spices in Dubai. Their quality standards and timely delivery are unmatched."</p>
+                            <p class="font-bold text-slate-900">— GCC Trading Corp, UAE</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
+                            <p class="text-slate-600 italic mb-6">"Excellent documentation and packaging. They understand international export requirements perfectly. A reliable partner for our bulk rice imports."</p>
+                            <p class="font-bold text-slate-900">— Global Food Suppliers, Qatar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certifications -->
+                <div class="lg:w-1/3">
+                    <h3 class="text-2xl font-bold mb-8">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
+                            <i data-lucide="award" class="text-emerald-600 mr-4"></i>
+                            <span class="font-semibold text-slate-700">APEDA Registered</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
+                            <i data-lucide="award" class="text-emerald-600 mr-4"></i>
+                            <span class="font-semibold text-slate-700">FSSAI Certified</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
+                            <i data-lucide="award" class="text-emerald-600 mr-4"></i>
+                            <span class="font-semibold text-slate-700">ISO Quality Standards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/2">
+                    <span class="text-emerald-600 font-bold uppercase tracking-widest text-sm">Get In Touch</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-8">Ready to Start a Trade Relationship?</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-slate-900">Our Location</h4>
+                                <p class="text-slate-600">Mangalore, Karnataka, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-slate-900">Email Us</h4>
+                                <p class="text-slate-600">contact@agrosail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-slate-900">Call Us</h4>
+                                <p class="text-slate-600">+91 (Shared on request)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                             <div class="mt-12 h-64 rounded-2xl overflow-hidden border border-slate-200 relative">
+    
+    <iframe
+        src="https://www.google.com/maps?q=12.8855,74.8388&z=12&output=embed"
+        class="w-full h-full border-0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-slate-50 p-10 rounded-3xl border border-slate-200">
+                        <h3 class="text-2xl font-bold mb-6">Send an Inquiry</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Your Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                                    <input type="email" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="john@company.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Subject</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="Export Inquiry">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="Requirement details..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition-all shadow-lg">
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+    
+    <!-- Logo Image -->
+    <img src="img/Agrosail logo.png" alt="Agrosail Logo" class="w-8 h-8 object-contain">
+
+    <!-- Company Name -->
+    <span class="font-bold text-xl tracking-tight">
+        Agrosail<span class="text-emerald-500">Exports</span>
+    </span>
+
+</div>
+                    <p class="text-slate-400 leading-relaxed">
+                        Sourcing, processing, and supplying premium agro commodities to international markets.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                    <div class="flex flex-col space-y-4 text-slate-400">
+                        <a href="#home" class="hover:text-emerald-400">Home</a>
+                        <a href="#about-us" class="hover:text-emerald-400">About Us</a>
+                        <a href="#products" class="hover:text-emerald-400">Products</a>
+                        <a href="#contact-us" class="hover:text-emerald-400">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Products</h4>
+                    <div class="flex flex-col space-y-4 text-slate-400">
+                        <span>Vegetables</span>
+                        <span>Spices</span>
+                        <span>Rice & Grains</span>
+                        <span>Dry Fruits</span>
+                        
+                        
+                    </div>
+                </div>
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+
+    <!-- Logo -->
+    <img src="img/Asail logo.png" 
+         alt="Agrosail" 
+         class="w-48 sm:w-56 md:w-64 lg:w-80 object-contain mx-auto md:mx-0">
+
+    <!-- Social Icons -->
+    <div class="flex space-x-4 justify-center md:justify-end">
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/yourpage" target="_blank"
+           class="bg-slate-800 p-3 rounded-full hover:bg-emerald-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 24 24" 
+                 fill="currentColor" 
+                 class="w-5 h-5 text-white">
+                <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5C18.216 4 20 5.784 20 7.75v8.5c0 1.966-1.784 3.75-3.75 3.75h-8.5C5.784 20 4 18.216 4 16.25v-8.5C4 5.784 5.784 4 7.75 4zm8.75 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+            </svg>
+        </a>
+        <a href="https://facebook.com/yourpage" target="_blank"
+       class="bg-slate-800 p-3 rounded-full hover:bg-emerald-600 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             viewBox="0 0 24 24" 
+             fill="currentColor" 
+             class="w-5 h-5 text-white">
+            <path d="M13 22v-9h3l1-4h-4V7c0-1.03.29-1.73 1.79-1.73H17V2.14C16.65 2.09 15.6 2 14.36 2 11.7 2 10 3.64 10 6.66V9H7v4h3v9h3z"/>
+        </svg>
+    </a>
+  
+
+    </div>
+
+</div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+                <p>© 2026 Agrosail Exports. Mangalore, Karnataka, India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/910000000000" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center group">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 font-bold whitespace-nowrap">WhatsApp Us</span>
+    </a>
+
+  
+     
+    
+</body>
+</html>
