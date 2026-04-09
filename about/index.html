@@ -7,10 +7,10 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- Lucide Icons (via CDN) -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
     
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
@@ -50,13 +50,13 @@
     </a> -->
 
             <!-- Desktop Nav -->
-            <div class="hidden lg:flex space-x-8">
-                <a href="./" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Home</a>
-                <a href="./about/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">About Us</a>
-                <a href="./products/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Products</a>
-                <a href="./why-choose-us/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Why Choose Us</a>
-                <a href="./global-presence/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Global Presence</a>
-                <a href="./contact.html" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Contact Us</a>
+             <div class="hidden lg:flex space-x-8">
+                <a href="../" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Home</a>
+                <a href="../about/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">About Us</a>
+                <a href="../products/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Products</a>
+                <a href="../why-choose-us/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Why Choose Us</a>
+                <a href="../global-presence/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Global Presence</a>
+                <a href="../contact/" class="nav-link text-sm font-semibold text-slate-600/90 hover:text-emerald-500 transition-colors">Contact Us</a>
             </div>
             <!-- Mobile Toggle -->
             <button id="menu-toggle" class="lg:hidden text-slate-900 transition-colors duration-300">
@@ -67,12 +67,12 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="lg:hidden bg-white absolute top-full left-0 w-full shadow-xl border-t border-slate-100">
             <div class="flex flex-col p-6 space-y-4">
-                <a href="/index.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Home</a>
-                <a href="/about-us.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">About Us</a>
-                <a href="/products.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Products</a>
-                <a href="/why-choose-us.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Why Choose Us</a>
-                <a href="/global-presence.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Global Presence</a>
-                <a href="/contact-us.html" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Contact Us</a>
+                <a href="../" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Home</a>
+                <a href="../about/" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">About Us</a>
+                <a href="../products/" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Products</a>
+                <a href="../why-choose-us/" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Why Choose Us</a>
+                <a href="../global-presence/" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Global Presence</a>
+                <a href="../contact/" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -140,7 +140,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Products dynamically added or static for HTML -->
                 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/vegetables.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/vegetables.webp'); background-size: cover; background-position: center;">
 
     <!-- Light overlay -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -157,7 +157,7 @@
 </div>
 
                 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/spices.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/spices.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -173,7 +173,7 @@
     </div>
 </div>
 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/rices.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/rices.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -189,7 +189,7 @@
     </div>
 </div>
 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/pulses.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/pulses.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -205,7 +205,7 @@
     </div>
 </div>
   <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/Dryfruits.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/Dryfruits.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -221,7 +221,7 @@
     </div>
 </div>
      <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/coconut.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/coconut.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -310,7 +310,7 @@
             </div>
             
             <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[600px] flex items-center justify-center"
-     style="background-image: url('img/map.avif'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/map.avif'); background-size: cover; background-position: center;">
 
     <!-- Light overlay (VERY IMPORTANT for readability) -->
     <div class="absolute inset-0 bg-white/70"></div>
@@ -430,7 +430,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg text-slate-900">Call Us</h4>
-                                <p class="text-slate-600">+91 (Shared on request)</p>
+                                <p class="text-slate-600">+91 9876543210</p>
                             </div>
                         </div>
                     </div>
@@ -487,7 +487,7 @@
                     <div class="flex items-center space-x-2 mb-6">
     
     <!-- Logo Image -->
-    <img src="img/Agrosail logo.png" alt="Agrosail Logo" class="w-8 h-8 object-contain">
+    <img src="../img/Agrosail logo.png" alt="Agrosail Logo" class="w-8 h-8 object-contain">
 
     <!-- Company Name -->
     <span class="font-bold text-xl tracking-tight">

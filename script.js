@@ -62,16 +62,49 @@ lucide.createIcons();
             setTimeout(() => box.remove(), 4000);
             e.target.reset();
         });
+document.addEventListener("DOMContentLoaded", () => {
 
-const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll(".nav-link");
 
-const navLink = document.querySelectorAll(".nav-link");
+    let path = window.location.pathname;
 
-navLink.forEach(link => {
-    const linkPath = link.getAttribute("href");
+    let parts = path.split("/").filter(Boolean);
 
-    if (linkPath === currentPath) {
-        link.classList.add("text-emerald-600", "border-b-2", "border-emerald-600");
-        link.classList.remove("text-slate-600");
+    let currentFolder = "";
+
+    // Always take LAST folder (this is the key fix)
+    if (parts.length === 0) {
+        currentFolder = "home"; // /
+    } else if (parts.length === 1) {
+        // could be homepage OR direct folder
+        if (parts[0].includes(".html")) {
+            currentFolder = "home";
+        } else {
+            currentFolder = parts[0];
+        }
+    } else {
+        currentFolder = parts[parts.length - 1];
     }
+
+    navLinks.forEach(link => {
+
+        let href = link.getAttribute("href");
+
+        let linkParts = href.split("/").filter(Boolean);
+        let linkFolder = linkParts[linkParts.length - 1];
+
+        // Home link
+        if (href === "../" || href === "./" || href === "/") {
+            linkFolder = "home";
+        }
+
+        if (linkFolder === currentFolder) {
+            link.classList.add("text-emerald-600", "border-b-2", "border-emerald-600");
+            link.classList.remove("text-slate-600");
+        }
+
+    });
+
 });
+
+link.classList.add("active");
