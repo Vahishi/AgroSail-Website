@@ -106,5 +106,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
+//hover nav
 link.classList.add("active");
+
+const isGitHub = window.location.hostname.includes("github.io");
+
+// replace with your repo name
+const base = isGitHub ? "/AgroSail-Website" : "";
+
+document.querySelectorAll("a[href^='/']").forEach(link => {
+    link.setAttribute("href", base + link.getAttribute("href"));
+});
