@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Always take LAST folder (this is the key fix)
     if (parts.length === 0) {
-        currentFolder = "home"; // /
+        currentFolder = "index"; // /
     } else if (parts.length === 1) {
-        // could be homepage OR direct folder
+        // could be indexpage OR direct folder
         if (parts[0].includes(".html")) {
-            currentFolder = "home";
+            currentFolder = "index";
         } else {
             currentFolder = parts[0];
         }
@@ -93,9 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let linkParts = href.split("/").filter(Boolean);
         let linkFolder = linkParts[linkParts.length - 1];
 
-        // Home link
+        // index link
         if (href === "../" || href === "./" || href === "/") {
-            linkFolder = "home";
+            linkFolder = "index";
         }
 
         if (linkFolder === currentFolder) {
