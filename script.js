@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Always take LAST folder (this is the key fix)
     if (parts.length === 0) {
-        currentFolder = "index"; // /
+        currentFolder = "AgroSail-Website/index"; // /
     } else if (parts.length === 1) {
         // could be indexpage OR direct folder
         if (parts[0].includes(".html")) {
-            currentFolder = "index";
+            currentFolder = "AgroSail-Website/index";
         } else {
             currentFolder = parts[0];
         }
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // index link
         if (href === "../" || href === "./" || href === "/") {
-            linkFolder = "index";
+            linkFolder = "AgroSail-Website/index";
         }
 
         if (linkFolder === currentFolder) {
