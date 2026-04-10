@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //hover nav
 link.classList.add("active");
 
-const isGitHub = window.location.hostname.includes("github.io");
+const isGitHub = window.location.hostname.includes("vahishi.github.io");
 
 // replace with your repo name
 const base = isGitHub ? "/AgroSail-Website" : "";
