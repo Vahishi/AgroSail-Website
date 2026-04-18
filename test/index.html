@@ -7,10 +7,10 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- Lucide Icons (via CDN) -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="/AgroSail-Website/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/AgroSail-Website/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/AgroSail-Website/apple-touch-icon.png">
@@ -24,7 +24,7 @@
            <a href="../" class="flex items-center space-x-2">
     
     <!-- Logo Image -->
-    <img src="img/Agrosail logo.png" alt="Agrosail Logo" class="w-10 h-10 object-contain">
+    <img src="../img/Agrosail logo.png" alt="Agrosail Logo" class="w-10 h-10 object-contain">
 
     <!-- Logo Text + Tagline -->
     <div class="flex flex-col leading-tight">
@@ -47,7 +47,8 @@
                 <a href="../why-choose-us/" class="nav-link text-sm font-semibold text-white/90 hover:text-emerald-500 transition-colors">Why Choose Us</a>
                 <a href="../global-presence/" class="nav-link text-sm font-semibold text-white/90 hover:text-emerald-500 transition-colors">Global Presence</a>
                 <a href="../contact/" class="nav-link text-sm font-semibold text-white/90 hover:text-emerald-500 transition-colors">Contact Us</a>
-                <a href="../test/" class="nav-link text-sm font-semibold text-white/90 hover:text-emerald-500 transition-colors">Test</a>
+                 <a href="../test/" class="nav-link text-sm font-semibold text-white/90 hover:text-emerald-500 transition-colors">Test</a>
+
             </div>
             <!-- Desktop Nav -->
              <!-- <div class="hidden lg:flex space-x-8">
@@ -66,7 +67,7 @@
         </div>
 
         <!-- Mobile Menu -->
-         <div id="mobile-menu" class="lg:hidden bg-white absolute top-full left-0 w-full shadow-xl border-t border-slate-100">
+        <div id="mobile-menu" class="lg:hidden bg-white absolute top-full left-0 w-full shadow-xl border-t border-slate-100">
             <div class="flex flex-col p-6 space-y-4">
                 <a href="../" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">Home</a>
                 <a href="../about/" class="mobile-link text-lg font-medium text-slate-700 hover:text-emerald-600">About Us</a>
@@ -80,14 +81,16 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 hero-overlay z-10"></div>
-            <img 
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2000" 
-                class="w-full h-full object-cover"
-                alt="Agricultural field"
-            >
+<img 
+    id="hero-image"
+    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2000" 
+    class="w-full h-full object-cover transition-transform duration-[5000ms] ease-linear"
+    style="transform: scale(1);"
+    alt="Agricultural field"
+>
         </div>
         
         <div class="container mx-auto px-6 relative z-20 text-center text-white">
@@ -115,17 +118,29 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
-                    <div class="relative">
-                        <img 
-                            src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80&w=1000" 
-                            alt="Quality control" 
-                            class="rounded-2xl shadow-2xl"
-                        >
-                        <div class="absolute -bottom-6 -right-6 bg-emerald-600 p-8 rounded-2xl shadow-xl hidden md:block">
-                            <p class="text-white text-4xl font-bold">100%</p>
-                            <p class="text-emerald-100 font-medium">Quality Guaranteed</p>
-                        </div>
-                    </div>
+                    <div class="relative aspect-[4/3] w-full min-h-[250px]">
+
+    <!-- Image 1 -->
+    <img 
+        id="about-img-1"
+        src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80&w=1000"
+        class="rounded-2xl shadow-2xl absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+    >
+
+    <!-- Image 2 -->
+    <img 
+    id="about-img-2"
+    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1000"
+    class="rounded-2xl shadow-2xl absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+>
+
+    <!-- Badge -->
+    <div class="absolute -bottom-6 -right-6 bg-emerald-600 p-8 rounded-2xl shadow-xl hidden md:block z-10">
+        <p class="text-white text-4xl font-bold">100%</p>
+        <p class="text-emerald-100 font-medium">Quality Guaranteed</p>
+    </div>
+
+</div>
                 </div>
                 <div class="lg:w-1/2">
                     <span class="text-emerald-600 font-bold uppercase tracking-widest text-sm">About Agrosail Exports</span>
@@ -171,7 +186,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Products dynamically added or static for HTML -->
                 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/vegetables.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/vegetables.webp'); background-size: cover; background-position: center;">
 
     <!-- Light overlay -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -188,7 +203,7 @@
 </div>
 
                 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/spices.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/spices.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -198,13 +213,13 @@
         <div class="text-5xl mb-6 h-[48px]"></div>
         <h3 class="text-xl font-bold mb-3 text-white">Premium Spices</h3>
         <p class="text-slate-200 mb-6">Black Pepper, Cardamom, Turmeric, Chilli.</p>
-        <a href="/AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+        <a href="../AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
             Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
         </a>
     </div>
 </div>
 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/rices.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/rices.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -214,13 +229,13 @@
         <div class="text-5xl mb-6 h-[48px]"></div>
         <h3 class="text-xl font-bold mb-3 text-white">Quality Rice</h3>
         <p class="text-slate-200 mb-6">Basmati & Non-Basmati varieties sourced from the best fields.</p>
-        <a href="/AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+        <a href="../AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
             Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
         </a>
     </div>
 </div>
 <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/pulses.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/pulses.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -230,13 +245,13 @@
         <div class="text-5xl mb-6 h-[48px]"></div>
         <h3 class="text-xl font-bold mb-3 text-white">Pulses & Grains</h3>
         <p class="text-slate-200 mb-6">Nutritious grains and pulses processed with care.</p>
-        <a href="/AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+        <a href="../AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
             Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
         </a>
     </div>
 </div>
   <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/Dryfruits.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/Dryfruits.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -246,13 +261,13 @@
         <div class="text-5xl mb-6 h-[48px]"></div>
         <h3 class="text-xl font-bold mb-3 text-white">Dry Fruits</h3>
         <p class="text-slate-200 mb-6">Premium selection of nutritious nuts and dried fruits.</p>
-        <a href="/AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+        <a href="../AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
             Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
         </a>
     </div>
 </div>
      <div class="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col items-center text-center overflow-hidden"
-     style="background-image: url('img/coconut.webp'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/coconut.webp'); background-size: cover; background-position: center;">
 
     <!-- Overlay (same as first card) -->
     <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
@@ -262,7 +277,7 @@
         <div class="text-5xl mb-6 h-[48px]"></div>
         <h3 class="text-xl font-bold mb-3 text-white">Coconut Products</h3>
         <p class="text-slate-200 mb-6">Fresh coconuts and specialized coconut based products.</p>
-        <a href="/AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
+        <a href="../AgroSail-Website/contact/" class="mt-auto text-emerald-600 font-bold flex items-center group-hover:translate-x-2 transition-transform">
             Inquire <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
         </a>
     </div>
@@ -341,7 +356,7 @@
             </div>
             
             <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[600px] flex items-center justify-center"
-     style="background-image: url('img/map.avif'); background-size: cover; background-position: center;">
+     style="background-image: url('../img/map.avif'); background-size: cover; background-position: center;">
 
     <!-- Light overlay (VERY IMPORTANT for readability) -->
     <div class="absolute inset-0 bg-white/70"></div>
@@ -518,7 +533,7 @@
                     <div class="flex items-center space-x-2 mb-6">
     
     <!-- Logo Image -->
-    <img src="img/Agrosail logo.png" alt="Agrosail Logo" class="w-8 h-8 object-contain">
+    <img src="../img/Agrosail logo.png" alt="Agrosail Logo" class="w-8 h-8 object-contain">
 
     <!-- Company Name -->
     <span class="font-bold text-xl tracking-tight">
@@ -553,7 +568,7 @@
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
 
     <!-- Logo -->
-    <img src="img/Asail logo.png" 
+    <img src="../img/Asail logo.png" 
          alt="Agrosail" 
          class="w-48 sm:w-56 md:w-64 lg:w-80 object-contain mx-auto md:mx-0">
 

@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 //hover nav
-link.classList.add("active");
+//link.classList.add("active");
 
 const isGitHub = window.location.hostname.includes("vahishi.github.io");
 
@@ -116,4 +116,86 @@ const base = isGitHub ? "/AgroSail-Website" : "";
 
 document.querySelectorAll("a[href^='/']").forEach(link => {
     link.setAttribute("href", base + link.getAttribute("href"));
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const heroImage = document.getElementById("hero-image");
+    if (!heroImage) return;
+
+    const images = [
+        "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2000",
+        
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000",
+        "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&q=80&w=2000"
+    ];
+
+    let index = 0;
+
+    function startZoom() {
+        // trigger zoom
+        heroImage.style.transform = "scale(1.1)";
+    }
+
+    function changeImage() {
+        // reset instantly
+        heroImage.style.transition = "none";
+        heroImage.style.transform = "scale(1)";
+
+        // change image
+        index = (index + 1) % images.length;
+        heroImage.src = images[index];
+
+        // wait a tiny bit → then animate
+        setTimeout(() => {
+            heroImage.style.transition = "transform 5s linear";
+            heroImage.style.transform = "scale(1.1)";
+        }, 50);
+    }
+
+    // initial zoom
+    setTimeout(startZoom, 100);
+
+    // loop
+    setInterval(changeImage, 5000);
+
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const img1 = document.getElementById("about-img-1");
+    const img2 = document.getElementById("about-img-2");
+
+    if (!img1 || !img2) return;
+
+    const images = [
+        "https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1000",
+        "../img/packaging.webp",
+        "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&q=80&w=1000"
+       
+    ];
+
+    let index = 0;
+    let isImg1Active = true;
+
+    setInterval(() => {
+        index = (index + 1) % images.length;
+
+        if (isImg1Active) {
+            img2.src = images[index];
+            img2.classList.remove("opacity-0");
+            img1.classList.add("opacity-0");
+        } else {
+            img1.src = images[index];
+            img1.classList.remove("opacity-0");
+            img2.classList.add("opacity-0");
+        }
+
+        isImg1Active = !isImg1Active;
+
+    }, 4000);
+
 });
